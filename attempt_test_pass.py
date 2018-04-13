@@ -51,26 +51,26 @@ import requests
 
 url = "https://app.autogradr.com/api/attempt"
 
-payload = "{\n  \"assignmentID\": 319,\n  \"questionID\": 575,\n  \"environmentID\": 4,\n\"files\": [\n{\n\"path\": \"main.py\",\n\"checksum\": \"9ba845f1e32d19a9dd0473733e7b661a\",\n \"url\": \"/api/files/9ba845f1e32d19a9dd0473733e7b661a\"\n        }\n    ]\n}"
+payload = "{\n  \"assignmentID\": 319,\n  \"questionID\": 575,\n  \"environmentID\": 4,\n   \"files\": [\n        {\n            \"path\": \"solution.zip\",\n            \"checksum\": \"58a9897e67d4146c6dcb518bc944ad24\",\n            \"url\": \"/api/files/58a9897e67d4146c6dcb518bc944ad24\"\n        }\n    ]\n}"
 headers = {
     'content-type': "application/json",
     'cache-control': "no-cache",
-    
+    'postman-token': "7403a0aa-28f0-5e86-02f0-2f06bcbd6131"
     }
 
 response = s.post(url, data=payload, headers=headers)
 
-print(response.text)
-json_response = response.json()
+# print(response.text)
+# json_response = response.json()
 
-poll_url = json_response["pollUrl"]
+# poll_url = json_response["pollUrl"]
 
 
-###################### Checking poll request #############################
+# ###################### Checking poll request #############################
 
-poll_response = s.get("https://app.autogradr.com"+poll_url)
+# poll_response = s.get("https://app.autogradr.com"+poll_url)
 
-print(poll_response.json())
+# print(poll_response.json())
 
 
 
