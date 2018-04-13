@@ -24,7 +24,7 @@ print(response.text)
 
 url = "https://app.autogradr.com/api/files/upload"
 
-payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"files\"; filename=\"main.py\"\r\nContent-Type: application/zip\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
+payload = "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"files\"; filename=\"solution.zip\"\r\nContent-Type: application/zip\r\n\r\n\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
 headers = {
     'content-type': "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
     'origin': "https://app.autogradr.com",
@@ -73,7 +73,7 @@ response = s.post(url, data=payload, headers=headers)
 # print(poll_response.json())
 
 
-
+print "Goto https://app.autogradr.com/assignment/273/project/515 to see your result"
 
 
 
