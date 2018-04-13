@@ -17,7 +17,7 @@ print(response.text)
 
 ######################### File upload #############################################
 
-print("checking for file upload ")
+#print("checking for file upload ")
 
 
 
@@ -41,7 +41,7 @@ headers = {
 
 response = s.post(url, data=payload, headers=headers)
 
-print(response.text)
+#print(response.text)
 
 
 
@@ -58,19 +58,19 @@ headers = {
     
     }
 
-response = s.post(url, data=payload, headers=headers)
+# response = s.post(url, data=payload, headers=headers)
 
-print(response.text)
-json_response = response.json()
+# print(response.text)
+# json_response = response.json()
 
-poll_url = json_response["pollUrl"]
+# poll_url = json_response["pollUrl"]
 
 
-###################### Checking poll request #############################
+# ###################### Checking poll request #############################
 
-poll_response = s.get("https://app.autogradr.com"+poll_url)
+# poll_response = s.get("https://app.autogradr.com"+poll_url)
 
-print(poll_response.json())
+# print(poll_response.json())
 
 
 

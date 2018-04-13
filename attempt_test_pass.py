@@ -17,7 +17,7 @@ print(response.text)
 
 ######################### File upload #############################################
 
-print("checking for file upload ")
+#print("checking for file upload ")
 
 
 
@@ -41,7 +41,7 @@ headers = {
 
 response = s.post(url, data=payload, headers=headers)
 
-print(response.text)
+#print(response.text)
 
 
 
