@@ -51,7 +51,7 @@ import requests
 
 url = "https://app.autogradr.com/api/attempt"
 
-payload = "{\n  \"assignmentID\": 319,\n  \"questionID\": 575,\n  \"environmentID\": 4,\n   \"files\": [\n        {\n            \"path\": \"solution.zip\",\n            \"checksum\": \"58a9897e67d4146c6dcb518bc944ad24\",\n            \"url\": \"/api/files/58a9897e67d4146c6dcb518bc944ad24\"\n        }\n    ]\n}"
+payload = "{\n  \"assignmentID\": 273,\n  \"questionID\": 515,\n  \"environmentID\": 15,\n   \"files\": [\n        {\n            \"path\": \"solution.zip\",\n            \"checksum\": \"58a9897e67d4146c6dcb518bc944ad24\",\n            \"url\": \"/api/files/58a9897e67d4146c6dcb518bc944ad24\"\n        }\n    ]\n}"
 headers = {
     'content-type': "application/json",
     'cache-control': "no-cache",
