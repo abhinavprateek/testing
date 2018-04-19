@@ -74,7 +74,7 @@ response = s.post(url, data=payload, headers=headers)
 
 
 
-print "Goto https://app.autogradr.com/assignment/273/project/515 to see your result"
+print "Goto localhost to see your result"
 
 
 
