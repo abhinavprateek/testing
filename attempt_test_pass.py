@@ -71,7 +71,10 @@ response = s.post(url, data=payload, headers=headers)
 # poll_response = s.get("https://app.autogradr.com"+poll_url)
 
 # print(poll_response.json())
+url= "https://app.autogradr.com/api/ui/logout"
 
+response=s.get(url)
+print (response.text)
 
 print "Goto http://localhost to see your result"
 
