@@ -74,7 +74,7 @@ response = s.post(url, data=payload, headers=headers)
 
 
 
-print "Goto localhost to see your result"
+print "Goto http://localhost to see your result"
 
 
 

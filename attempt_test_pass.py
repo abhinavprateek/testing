@@ -73,7 +73,7 @@ response = s.post(url, data=payload, headers=headers)
 # print(poll_response.json())
 
 
-print "Goto localhost to see your result"
+print "Goto http://localhost to see your result"
 
 
 
