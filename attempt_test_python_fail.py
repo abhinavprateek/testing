@@ -51,7 +51,7 @@ import requests
 
 url = "https://app.autogradr.com/api/attempt"
 
-payload = "{\n  \"assignmentID\": 349,\n  \"questionID\": 574,\n  \"environmentID\": 15,\n   \"files\": [\n        {\n            \"path\": \"ecommerce_fail.zip\",\n            \"checksum\": \"34af042342b58d16fd8bd356746051ab\",\n            \"url\": \"/api/files/34af042342b58d16fd8bd356746051ab\"\n        }\n    ]\n}"
+payload = "{\n  \"assignmentID\": 382,\n  \"questionID\": 702,\n  \"environmentID\": 4,\n   \"files\": [\n        {\n            \"path\": \"main.py\",\n            \"checksum\": \"001ba3acc5067ecc7c7ac1d740bdbc3e\",\n            \"data\": \"import pandas as pd\r\nimport numpy as np\r\n\r\nfood = pd.read_csv('en.openfoodfacts.org.products.tsv', sep='\\t')\r\nfood.shape \r\nfood.shape[0]\r\nprint food.shape \r\nprint food.shape[1]\r\n\r\nfood.columns[103]\"\n        }\n    ]\n}"
 headers = {
     'content-type': "application/json",
     'cache-control': "no-cache",
@@ -71,9 +71,12 @@ response = s.post(url, data=payload, headers=headers)
 # poll_response = s.get("https://app.autogradr.com"+poll_url)
 
 # print(poll_response.json())
+url= "https://app.autogradr.com/api/ui/logout"
 
+response=s.get(url)
+print (response.text)
 
-print "Goto localhost to see your result"
+print "Goto http://localhost to see your result"
 
 
 
